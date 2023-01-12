@@ -12,7 +12,8 @@ namespace Reflection
         public string Brand;
         public int Price;
         public string Quality;
-        abstract public void feature();
+        abstract public void Sound();
+      
         
 
     }

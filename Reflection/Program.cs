@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
-//Assembly assembly = Assembly.GetExecutingAssembly();
-//Type[] types = assembly.GetTypes();
+
 
 List<object> Insturments = new List<object>();
 Piano piano = new Piano();
@@ -45,8 +44,9 @@ for(int i = 0; i < Insturments.Count; i++)
     FieldInfo[] fields = Insturments[i].GetType().GetFields();
     foreach(FieldInfo item in fields)
     {
-        Console.WriteLine(item.Name + ":" + item.GetValue(Insturments[i]));
+        Console.WriteLine(item.Name + ":" + item.GetValue(Insturments[i]));      
     }
+    Console.WriteLine("      ");
 }
 
 

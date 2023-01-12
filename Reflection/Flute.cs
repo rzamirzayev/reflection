@@ -11,15 +11,10 @@ namespace Reflection
     internal class Flute : Instrument
     {
         public string colour;
-        public override void feature()
+
+        public override void Sound()
         {
-            
-            Console.WriteLine("Flute ozellikleri");
-            Console.WriteLine("Model:" + Model);
-            Console.WriteLine("Brand:" + Brand);
-            Console.WriteLine("Price:" + Price + "$");
-            Console.WriteLine("Quality:" + Quality);
-            Console.WriteLine("Colour:" + colour);
+            Console.WriteLine("flute sesi");
         }
     }
 }

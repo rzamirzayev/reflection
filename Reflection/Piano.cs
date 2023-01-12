@@ -11,21 +11,10 @@ namespace Reflection
     {
         
         public string colour { get; set; }
-        
-        
-        public override void feature()
-        {
-            
-            Console.WriteLine("Piano ozellikleri");
-            Console.WriteLine("Model:"+Model);
-            Console.WriteLine("Brand:"+Brand);
-            Console.WriteLine("Price:"+Price+"$");
-            Console.WriteLine("Quality:"+Quality);
-            Console.WriteLine("Colour:"+colour);
-           
-            
-        }
 
-        
+        public override void Sound()
+        {
+            Console.WriteLine("piano sesi");
+        }
     }
 }
